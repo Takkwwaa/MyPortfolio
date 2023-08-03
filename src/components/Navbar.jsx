@@ -6,7 +6,8 @@ import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { useTheme } from "./ThemeContext";
 import darkthemelogo from "../assets/darkthemelogo.png";
-
+import menuDarkTheme from "../assets/menuDarkTheme.svg";
+import closeDarkTheme from "../assets/closeDarkTheme.svg";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [currentTheme, setTheme] = useState("light");
@@ -84,7 +85,15 @@ const Navbar = () => {
         )}
         <div className="sm:hidden flex justify-end items-center">
           <img
-            src={toggle ? close : menu}
+            src={
+              isDarkMode
+                ? toggle
+                  ? closeDarkTheme
+                  : menuDarkTheme
+                : toggle
+                ? close
+                : menu
+            }
             alt="menu"
             className="w-[26px] h-[26px] object-contain mr-10 "
             onClick={() => setToggle((prev) => !prev)}
@@ -93,7 +102,11 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-white absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar border-solid border-primary border-2`}
+          } p-6  absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar border-solid border-2 ${
+            isDarkMode
+              ? "text-dark-secondary bg-dark-primary border-dark-secondary"
+              : "text-secondary bg-white border-primary "
+          }`}
         >
           <ul
             className={`list-none flex justify-end items-start flex-1 flex-col ${
@@ -120,23 +133,6 @@ const Navbar = () => {
               }
             >
               <a href={"#projects"}>Projects</a>
-            </li>
-            <li>
-              {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="bg-[#143573] p-2 rounded-xl"
-                >
-                  <RiSunLine size={25} color="#f1bb2b" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="bg-[#143573] p-2 rounded-xl"
-                >
-                  <RiMoonFill size={25} color="#f1bb2b" />
-                </button>
-              )}
             </li>
           </ul>
         </div>

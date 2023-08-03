@@ -13,7 +13,7 @@ const Projects = () => {
       description:
         "The project involved creating a website that offers personalized food plans and entertainment plans based on users' dietary preferences, budget, and favorite cuisine, recommending restaurants, cafes, and hotels that match their taste and location. This platform allows users to discover new food experiences and uncover hidden gems in their area. I am proud of my work on this project and I believe it demonstrates my skills in web development and user experience design.",
       github: "https://github.com/Takkwwaa/Bon-Plan",
-      photo: { home },
+      photo: { photo },
     },
     {
       name: "Reclamation Management System",
@@ -43,7 +43,7 @@ const Projects = () => {
                   <img
                     src={project.photo}
                     alt="project"
-                    className="rounded-xl shadow-xl hover:opacity-70"
+                    className="rounded-xl shadow-xl hover:opacity-70 h-32 w-32"
                   />
                 </div>
                 <div className="mt-8 md:w-1/2">
