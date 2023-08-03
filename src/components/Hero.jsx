@@ -34,16 +34,18 @@ const Hero = () => {
               I'm a Junior Full-Stack Web Developer based in Tunis, Tunisia,
               passionate about creating attractive and functional websites.
             </p>
-            <button
-              type="submit"
-              className={`px-8 mt-7 rounded sm:w-44 w-40 hover:bg-secondary bg-[#f1bb2b] text-white  py-2.5 text-xs sm:text-sm font-medium uppercase leading-tight shadow-md transition duration-150 ease-in-out focus:outline-none ${
-                isDarkMode
-                  ? "border-[#f1bb2b] border-[1px] hover:text-[#f1bb2b]"
-                  : ""
-              }`}
-            >
-              Contact me
-            </button>
+            <a href="#footer">
+              <button
+                type="submit"
+                className={`px-8 mt-7 rounded sm:w-44 w-40 hover:bg-secondary bg-[#f1bb2b] text-white  py-2.5 text-xs sm:text-sm font-medium uppercase leading-tight shadow-md transition duration-150 ease-in-out focus:outline-none ${
+                  isDarkMode
+                    ? "border-[#f1bb2b] border-[1px] hover:text-[#f1bb2b]"
+                    : ""
+                }`}
+              >
+                Contact me
+              </button>
+            </a>
           </div>
         </div>
         <div className="flex flex-row items-center text-center justify-center flex-1 sm:pb-10 py-3 sm:pt-20 pt-10 ">

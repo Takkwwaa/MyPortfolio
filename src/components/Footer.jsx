@@ -10,7 +10,10 @@ import { useTheme } from "./ThemeContext";
 const Footer = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   return (
-    <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
+    <footer
+      className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl "
+      id="footer"
+    >
       <hr
         className={`w-full h-0.5 mx-auto mt-8  border-0 ${
           isDarkMode ? "bg-base" : "bg-secondary"

@@ -8,6 +8,7 @@ import { useTheme } from "./ThemeContext";
 import darkthemelogo from "../assets/darkthemelogo.png";
 import menuDarkTheme from "../assets/menuDarkTheme.svg";
 import closeDarkTheme from "../assets/closeDarkTheme.svg";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [currentTheme, setTheme] = useState("light");
@@ -35,7 +36,7 @@ const Navbar = () => {
               "font-poppins font-normal cursor-pointer text-[18px] mr-10 "
             }
           >
-            <a href={"#contact"} className=" hover:text-[#f1bb2b]">
+            <a href={"#footer"} className=" hover:text-[#f1bb2b]">
               Contact
             </a>
           </li>
@@ -118,7 +119,7 @@ const Navbar = () => {
                 "font-poppins font-normal cursor-pointer text-[16px] hover:text-[#f1bb2b] mb-4"
               }
             >
-              <a href={"#contact"}>Contact Us</a>
+              <a href={"#footer"}>Contact Us</a>
             </li>
             <li
               className={
