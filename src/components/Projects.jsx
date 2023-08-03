@@ -47,7 +47,11 @@ const Projects = () => {
                   />
                 </div>
                 <div className="mt-8 md:w-1/2">
-                  <h1 className="text-4xl font-bold mb-6 text-secondary">
+                  <h1
+                    className={`text-4xl font-bold mb-6 ${
+                      isDarkMode ? "text-[#f1bb2b]" : "text-secondary"
+                    }`}
+                  >
                     {project.name}
                   </h1>
                   <p
