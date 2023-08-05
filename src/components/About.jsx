@@ -44,7 +44,7 @@ const About = () => {
             Get to know me!
           </h1>
           <p>
-            Hi, my name is Tkoua and I am a{" "}
+            Hi, my name is Takoua and I am a{" "}
             <span className="font-bold text-[#f1bb2b]">
               {"highly ambitious"}
             </span>
@@ -54,7 +54,7 @@ const About = () => {
             </span>
             , and
             <span className="font-bold text-[#f1bb2b]">{" driven"}</span>{" "}
-            software engineer based in Tunos, Tunisia.
+            software engineer based in Tunis, Tunisia.
           </p>
           <br />
           <p>

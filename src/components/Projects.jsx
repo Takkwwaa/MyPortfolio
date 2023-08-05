@@ -2,8 +2,6 @@ import React from "react";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import photo from "../assets/photo.png";
 import { useTheme } from "./ThemeContext";
-import home from "../assets/home.png";
-import ITCEQ from "../assets/ITCEQ.png";
 
 const Projects = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -13,14 +11,14 @@ const Projects = () => {
       description:
         "The project involved creating a website that offers personalized food plans and entertainment plans based on users' dietary preferences, budget, and favorite cuisine, recommending restaurants, cafes, and hotels that match their taste and location. This platform allows users to discover new food experiences and uncover hidden gems in their area. I am proud of my work on this project and I believe it demonstrates my skills in web development and user experience design.",
       github: "https://github.com/Takkwwaa/Bon-Plan",
-      photo: { home },
+      photo: "/home.png",
     },
     {
       name: "Reclamation Management System",
       description:
         "Creation of a website that notifies the administrator of reclamations so he can assign them to a specific technical team member and manage projects and resources.Creation of a website that notifies the administrator of reclamations so he can assign them to a specific technical team member and manage projects and resources.",
       github: "https://github.com/Takkwwaa/itceq",
-      photo: { ITCEQ },
+      photo: "/ITCEQ.png",
     },
   ];
   return (
@@ -43,7 +41,7 @@ const Projects = () => {
                   <img
                     src={project.photo}
                     alt="project"
-                    className="rounded-xl shadow-xl hover:opacity-70 "
+                    className="rounded-xl shadow-xl hover:opacity-70 w-full h-full "
                   />
                 </div>
                 <div className="mt-8 md:w-1/2">
